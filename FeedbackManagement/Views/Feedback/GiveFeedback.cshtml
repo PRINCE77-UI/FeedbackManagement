@@ -1,0 +1,15 @@
+﻿@model FeedbackManagemant.Models.Feedback
+@{
+    ViewBag.Title = "Give Feedback";
+}
+
+<h3>Give Feedback</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @Html.Partial("_FeedbackForm", Model)
+}
+
+<br />
+@Html.ActionLink("Back to List", "Index")

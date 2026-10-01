@@ -1,0 +1,44 @@
+﻿@model FeedbackManagemant.Models.Feedback
+
+<table cellpadding="5" cellspacing="0">
+    <tr>
+        <td>Enrollment No:</td>
+        <td>
+            @Html.TextBoxFor(m => m.EnrollmentNo)
+            @Html.ValidationMessageFor(m => m.EnrollmentNo)
+        </td>
+    </tr>
+    <tr>
+        <td>Student Name:</td>
+        <td>
+            @Html.TextBoxFor(m => m.StudentName)
+            @Html.ValidationMessageFor(m => m.StudentName)
+        </td>
+    </tr>
+    <tr>
+        <td>Subject:</td>
+        <td>
+            @Html.TextBoxFor(m => m.Subject)
+            @Html.ValidationMessageFor(m => m.Subject)
+        </td>
+    </tr>
+    <tr>
+        <td>Rating:</td>
+        <td>
+            @Html.TextBoxFor(m => m.Rating)
+            @Html.ValidationMessageFor(m => m.Rating)
+        </td>
+    </tr>
+    <tr>
+        <td>Comments:</td>
+        <td>
+            @Html.TextAreaFor(m => m.Comments)
+            @Html.ValidationMessageFor(m => m.Comments)
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Add Feedback" />
+        </td>
+    </tr>
+</table>
